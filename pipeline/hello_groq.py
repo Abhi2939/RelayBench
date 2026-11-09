@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 KEY = os.getenv("GROQ_API_KEY")   
-MODEL = "llama-3.1-8b-instant"    
+MODEL = "openai/gpt-oss-120b"    
 
 t0 = time.perf_counter()
 r = httpx.post(
