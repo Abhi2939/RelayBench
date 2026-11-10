@@ -14,6 +14,7 @@ r = httpx.post(
         "model": MODEL,
         "messages": [{"role": "user", "content": "In one sentence, what is a transformer?"}],
         "max_tokens": 100,
+        "reasoning_effort":"low"
     },
     timeout=30,
 )
